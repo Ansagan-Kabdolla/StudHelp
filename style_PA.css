@@ -123,7 +123,7 @@ box-sizing: border-box;
 	justify-content: center;
 	flex-wrap: wrap;
 }
-.plus1{
+.plus1, .plus2{
 	width: 600px;
 	display: flex;
 	padding:20px;
@@ -131,16 +131,21 @@ box-sizing: border-box;
 	margin:5px;
 	justify-content: space-around;
 	border:1px solid #E0E0E0f2;
-	height: 250px;
+	height: 230px;
 	border-radius: 20px;
 }
-.plus1 h2{
+.plus1 h2, .plus2 h2{
 	text-align: center;
+	color:#828282;
+	opacity: 80%;
 }
 .plus1 img{
-	width:120px;
-	height:120px;
-	fill :green;
+	margin: auto 30px;
+	height:90px;
+}
+.plus2 img{
+	margin: auto 30px;
+	height:70px;
 }
 
 @font-face {
@@ -200,7 +205,5 @@ span.text{
 	.form_zayavka h3{
 	margin:0;
 }
-#block_plus{
-	display: none;
-}
+
 }
