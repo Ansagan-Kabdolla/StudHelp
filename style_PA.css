@@ -155,7 +155,7 @@ box-sizing: border-box;
 
 
 
-@media (min-width: 360px) and (max-width: 720px) {
+@media screen and (min-width: 360px) and (max-width: 720px) {
 	#block_head{
 		height: 1200px;
 	}
@@ -164,6 +164,9 @@ box-sizing: border-box;
 		z-index: 1;
 		width: 90%;
 	    margin: 20px auto; 
+	}
+	.head ul{
+		display: none;
 	}
 	.form_zayavka{
 		max-width: 440px;
