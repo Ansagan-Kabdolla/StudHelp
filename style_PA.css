@@ -142,3 +142,10 @@ box-sizing: border-box;
 	height:120px;
 	fill :green;
 }
+
+@font-face {
+    font-family: 'Sansation Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url(sansation-regular_8683dc145e5baa5924ab113a13e464ab.woff) format('woff');
+}
