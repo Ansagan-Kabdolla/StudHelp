@@ -124,7 +124,7 @@ box-sizing: border-box;
 	flex-wrap: wrap;
 }
 .plus1, .plus2{
-	width: 600px;
+	width: 45%;
 	display: flex;
 	padding:20px;
 	box-sizing: border-box;
@@ -205,5 +205,11 @@ span.text{
 	.form_zayavka h3{
 	margin:0;
 }
-
+.plus1, .plus2{
+	width:90%;
+	padding: 5px;
+}
+	.plus1 img, .plus2 img{
+		margin:auto 9px;
+	}
 }
