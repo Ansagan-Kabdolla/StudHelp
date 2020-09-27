@@ -208,6 +208,8 @@ span.text{
 .plus1, .plus2{
 	width:90%;
 	padding: 5px;
+	margin-bottom: 10px;
+	height:auto;
 }
 	.plus1 img, .plus2 img{
 		margin:auto 9px;
