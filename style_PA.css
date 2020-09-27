@@ -104,13 +104,15 @@ box-sizing: border-box;
 }
 .menu a{
 	font-size: 24px;
-	font-family: 'Sansation';
+    font-family: "Sansation Regular";
+	
 	color:#272727;
 	opacity: .8;
 }
 .title_block{
 	font-size: 36px;
-	font-family: 'Sansation';
+    font-family: "Sansation Regular";
+	
 	text-align: center;
 	margin-top: 70px;
 	color:#5b5b5b;
@@ -137,7 +139,6 @@ box-sizing: border-box;
 .plus1 h2, .plus2 h2{
 	text-align: center;
 	color:#828282;
-	opacity: 80%;
 }
 .plus1 img{
 	margin: auto 30px;
@@ -146,6 +147,15 @@ box-sizing: border-box;
 .plus2 img{
 	margin: auto 30px;
 	height:70px;
+}
+.plus_title{
+    font-family: "Sansation Regular";
+    font-size: 24px;
+}
+.plus_desc{
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+	color: rgba(0, 0, 0, 0.8);
 }
 
 @font-face {
@@ -210,6 +220,9 @@ span.text{
 	padding: 5px;
 	margin-bottom: 10px;
 	height:auto;
+}
+.plus1 h2, .plus2 h2{
+	text-align: left;
 }
 	.plus1 img, .plus2 img{
 		margin:auto 9px;
