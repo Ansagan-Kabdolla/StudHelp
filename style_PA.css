@@ -328,7 +328,7 @@ span.text{
     width: 100%;
 }
 #timeline .timeline-item {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
 }
 #timeline .timeline-item .timeline-icon {
@@ -430,4 +430,7 @@ span.text{
 	.success{
 		text-align: left;
 	}
+    #timeline .timeline-item {
+    margin-bottom: 50px;
+}
 }
