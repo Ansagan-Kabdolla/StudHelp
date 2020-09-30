@@ -194,6 +194,22 @@ box-sizing: border-box;
 	opacity: .8;
 }
 
+.uslugi{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.usluga{
+    width: 45%;
+    text-align: center;
+    margin:10px;
+    font-family: "Lato",sans-serif;
+}
+.usluga_text{
+    width: 300px;
+    margin: 0 auto;
+}
 @font-face {
     font-family: 'Sansation Regular';
     font-style: normal;
@@ -201,7 +217,19 @@ box-sizing: border-box;
     src: url(sansation-regular_8683dc145e5baa5924ab113a13e464ab.woff) format('woff');
 }
 
-
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #337ab7;
+}
+ul{
+    list-style-type: none;
+}
+.ftr_title{
+    color:white;
+    font-family:"Sansation Regular"; 
+}
 
 
 
@@ -277,6 +305,9 @@ span.text{
 	font-size: 20px;
 
 }
+.usluga{
+    width: 40%;
+}
 
 }
 
@@ -290,6 +321,16 @@ span.text{
 
 
 
+#block_timeline{
+    background-color: #eee;
+    padding-top: 30px;
+}
+#block_timeline h1{
+    color:red;
+    text-align: center;
+    font-family: "Sansation Regular";
+    color:#6b8193;
+}
 
 #timeline *, 
 #timeline *:before, 
@@ -330,6 +371,9 @@ span.text{
 #timeline .timeline-item {
     margin-bottom: 0px;
     position: relative;
+}
+#timeline .timeline-item:last-child {
+    margin-bottom: 50px;
 }
 #timeline .timeline-item .timeline-icon {
     background: #337AB7;
