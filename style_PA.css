@@ -242,99 +242,6 @@ ul{
 
 
 
-@media screen and (max-width: 720px) {
-    #block_questions{
-        border-radius: 70px 70px 0px 0px;
-    }
-	span.title{
-    font-size: 43px;
-}
-span.text{
-	font-size: 32px;
-}
-	#block_head{
-		height: none;
-	}
-	.head_text{
-		position: relative;
-		z-index: 1;
-		width: 90%;
-	    margin: 20px auto; 
-	}
-	.head ul{
-		display: none;
-	}
-	.form_zayavka{
-		width: 85%;
-    right: auto; 
-    top: 0px;
-    height: 369px;
-    border-radius: 20px;
-    z-index: 1;
-    float: none;
-    background-color: rgba(255, 255, 255, 0.77);
-    position: relative;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
-}
-	.back{
-		position: absolute;
-
-		height:none;
-		opacity:.35;
-		top:0;
-	}
-	.form_zayavka h3{
-	margin:0;
-}
-.plus1, .plus2{
-	width:90%;
-	padding: 5px;
-	margin-bottom: 10px;
-	height:auto;
-}
-.plus1 h2, .plus2 h2{
-	text-align: left;
-}
-	.plus1 img, .plus2 img{
-		margin:auto 9px;
-	}
-
-
-	.about_text{
-	width:520px;
-
-}
-.about_title{
-	font-size: 40;
-
-}
-.about_desc{
-	font-size: 20px;
-
-}
-.usluga{
-    width: 80%;
-    padding:5px;
-}
-.logo{
-    left:0px;
-    display: block;
-    margin: 0 auto;
-}
-}
-
-@media screen and (max-width: 540px){
-	.about_text{
-		width:360px;
-	}
-}
-
-
-
 
 
 #block_timeline{
@@ -502,4 +409,96 @@ span.text{
     height:1000px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+
+@media screen and (max-width: 720px) {
+    #block_questions{
+        border-radius: 70px 70px 0px 0px;
+    }
+    span.title{
+    font-size: 43px;
+}
+span.text{
+    font-size: 32px;
+}
+    #block_head{
+        height: none;
+    }
+    .head_text{
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        margin: 20px auto; 
+    }
+    .head ul{
+        display: none;
+    }
+    .form_zayavka{
+        width: 85%;
+    right: auto; 
+    top: 0px;
+    height: 369px;
+    border-radius: 20px;
+    z-index: 1;
+    float: none;
+    background-color: rgba(255, 255, 255, 0.77);
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25);
+}
+    .back{
+        position: absolute;
+
+        height:none;
+        opacity:.35;
+        top:0;
+    }
+    .form_zayavka h3{
+    margin:0;
+}
+.plus1, .plus2{
+    width:90%;
+    padding: 5px;
+    margin-bottom: 10px;
+    height:auto;
+}
+.plus1 h2, .plus2 h2{
+    text-align: left;
+}
+    .plus1 img, .plus2 img{
+        margin:auto 9px;
+    }
+
+
+    .about_text{
+    width:520px;
+
+}
+.about_title{
+    font-size: 40;
+
+}
+.about_desc{
+    font-size: 20px;
+
+}
+.usluga{
+    width: 80%;
+    padding:5px;
+}
+.logo{
+    left:0px;
+    display: block;
+    margin: 0 auto;
+}
+}
+
+@media screen and (max-width: 540px){
+    .about_text{
+        width:360px;
+    }
 }
