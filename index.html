@@ -14,7 +14,7 @@
 				<li><a href="#block_about">О нас</a></li>
 				<li><a href="#block_uslugi">Услуги</a></li>
 				<li><a href="#block_timeline">Этапы</a></li>
-				<li><a href="#">Вопросы</a></li>
+				<li><a href="#block_questions">Вопросы</a></li>
 			</ul>
 		</div>
 		<div class="head_text">
@@ -32,7 +32,7 @@
     height: 100%;
     width: auto;
 "></p>
-				<button type="submit"> Отправить </button>
+				<button class='but' type="submit"><span>Отправить</span>  </button>
 			</form>
 		</div>
 		<picture>
@@ -141,9 +141,9 @@
 				<div class="usluga_text">
 					Веб разработка
 				</div>
-			</div>
+			</divК сожалению нет, в программировании тяжело поставить точные расценки, так как бывают скрипты которые требуют нескольких дней разработки, а бывают сайты которые можно сделать за один день.Тут все зависит от требуемой  клиенту функциональности.Но простые задачи мы решаем от 500тг>
 		</div>
-		
+		</div>
 	</div>
 	<hr width=90% >
 	<div id="block_timeline">
@@ -183,7 +183,7 @@
 		        </div>
 		        <div class="timeline-content">
 		            <h4>В течение 1 часа</h4>
-		            <h3 style='text-align:center;color:#337AB7;font-family:"Sansation Regular";'>Оплата</h3><p>Если вас все устраивает, отправляете деньги, иначе задача идет на доработку</p>
+		            <h3 style='text-align:center;color:#337AB7;font-family:"Sansation Regular";'>Оплата</h3><p>Если вас все устраивает, отправляете деньги(kaspi,qiwi и др.), иначе задача идет на доработку</p>
 		        </div>
 		    </div>
 		    <div class="timeline-item">
@@ -200,10 +200,62 @@
 	</div>
 	<div id="block_questions">
 		<h1 class='title_block'>Вопросы</h1>
+		<div class="faq_form">
+			
+		
+		<div class="FAQ">
+			<ul class='answers_questions'>
+				<li>
+					<h4 class='question'>Какая гарантия что после оплаты вы решите мою задачу</h4>
+					<span class='answer'>Мы не берем деньги до демонстрации продукта и его функциональности,сперва клиент посмотрит на решение и только после этого мы даем реквизиты для отправки денег и  отправяем уже решенную задачу</span>
+				</li>
+				<li>
+					<h4 class='question'>У вас есть конкретный прайс</h4>
+					<span class='answer'>К сожалению нет, в программировании тяжело поставить точные расценки.Тут все зависит от требуемой  клиенту функциональности.Но простые задачи мы решаем от 500тг</span>
+				</li>
+				<li>
+					<h4 class='question'>Не могу зарегистрироваться</h4>
+					<span class='answer'>Мы заметили что регистрация не самый удобный инструмент для идентификации пользователей так как на постороннем сервисе не каждый готов оставить свои данные, поэтому мы даем вам выбор для обратной связи.</span>
+				</li>
+				<li>
+					<h4 class='question'>Как происходит оплата за ваши услуги</h4>
+					<span class='answer'>Оплата чаще всего проходит по популярным у нас Kaspi и Qiwi.Однако мы пользуемся и большинством других сервисов</span>
+				</li>
+				<li>
+					<h4 class='question'>Чем вы отличаетесь от зарубежных сервисов</h4>
+					<span class='answer'>Это можно посмотреть в блоке Преимущества, но повторимся и скажем что наш сервис решает сугубо задачи программирования и наши расценки привязаны к тенге, а значит вы остаетесь в плюсе, к примеру российске сервисы берут примерно в 3-5 раз дороже, англоязычные сервисы в 5-7 раз дороже, и к тому же в работе с ними могут быть языковые барьеры, а мы свободно говорим на 3 языках</span>
+				</li>
+				
+			</ul>
+		</div>
+		<div class="form_questions">
+			<form>
+				 <span style="font-family: &quot;Sansation Regular&quot;;">Остались вопросы, отправьте мы ответим</span>
+				<input type="" name="" placeholder="Ник" style="background-color: #ffffff;border: 1px solid #c4c8f1;text-align: center;height: 18px;">
+				<textarea placeholder="Вопрос" style="
+    background-color: #ffffff;
+    border: 1px solid #c4c8f1;
+    text-align: center;
+    height: 100px;
+"></textarea>
+<button style="
+    box-shadow: 0 0 3px 0px #000000;
+    width: 200px;
+    color: white;
+    align-self: center;
+    display: inline;
+    height: 25px;
+    border: 1px solid #636f97;
+    border-radius: 5px;
+    background-color: #8BC34A;
+"> Отправить </button>
+			</form>
+		</div>
+		</div>
 	</div>
 	<div class="footer">
 		<div class="ftr_block">
-			<p class='ftr_title'>Правила</p>
+			<p class='ftr_title'><i class='icon-gmail'></i>Правила</p>
 			<ul>
 				<li>Оформления задачи</li>
 				<li>Отправки денег</li>
@@ -211,12 +263,16 @@
 			</ul>
 		</div>
 		<div class="ftr_block">
-			<p class='ftr_title'>Правила</p>
-			<ul>
-				<li>Оформления задачи</li>
-				<li>Отправки денег</li>
-				<li>Обязанности</li>
-			</ul>
+			<img src="logo_footer.png" width="217px">
+			<p class="ftr_title" style="
+    text-align: center;
+">ProgAss</p>
+			<p style="
+    text-align: center;
+    color: white;
+    font-family: &quot;Sansation Regular&quot;;
+">С заботой о вас</p>
+			
 		</div>
 		<div class="ftr_block">
 			<p class='ftr_title'>Правила</p>
