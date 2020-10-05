@@ -267,9 +267,9 @@ ul{
     font-family:"Sansation Regular"; 
 }
 
-
-
-
+.ftr_block{
+    text-align: center;
+}
 
 
 #block_timeline{
@@ -395,6 +395,31 @@ ul{
     font-size: 29px;
     margin: 0;
     margin-block-start: 0;
+}
+
+.icon_title{
+    text-align: center;
+    color: white;
+    font-family: "Sansation Regular"
+}
+.icons li{
+    width: 30%;
+    text-align: center;
+}
+.socset{
+    color:white;
+    font-size: 20px;
+}
+.socset:hover{
+    color:#b4b4b4; 
+}
+.icons{
+    padding:0;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
     #timeline {
@@ -605,6 +630,10 @@ span.text{
     .about_text{
         width:360px;
     }
+    .ftr_block{
+    width: 100%;
+}
+
 }
 
 
