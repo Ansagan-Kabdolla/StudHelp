@@ -423,7 +423,7 @@ ul{
 }
 
 #block_questions{
-    background: #a5dbec;
+    background: #97c5e7;/*#dcebee*/
     border-radius: 150px 150px 0px 0px;
     padding: 30px 6px;
 }
@@ -443,7 +443,7 @@ ul{
     margin: 0px;
     /* position: absolute; */
     font-family: 'Lato',sans-serif;
-    color: #555555;
+    color: #203a72;/*#555555;*/
     /* width: auto; */
     /* position: absolute;*/
 }
@@ -452,7 +452,7 @@ ul{
     text-align: right;
     width: 500px;
     /* margin: 2114px; */
-    color: #727272;
+    color:white; /*#727272;*/
     font-family: 'Lato',sans-serif;
 }
 .form_questions{
