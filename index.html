@@ -3,9 +3,64 @@
 <head>
 	<title>Programming assistance</title>
 	<link rel="stylesheet" type="text/css" href="css/style_PA.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Решаем задачи программирования для студентов" />
 	<meta name="keywords" content="помощь, студентам, программирование, задания">
+	<style type="text/css">
+.my-custom-label {
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+   /*background: #efefef;*/
+    text-align: center;
+}
+
+.my-custom-label > input[type=radio] {
+    display: none;
+}
+
+.my-custom-label > span {
+    background: #fff;
+    border: solid 4px #bbb;
+    display: contents;/*inline-table;*/
+    width:42px;
+    height: 20px;
+    border-radius: 100%;
+    vertical-align:middle;
+}
+
+.my-custom-label > input[type=radio]:checked + span {
+    background: #0ff;
+    border:4px solid #8b7cf7;
+}
+.base_socset{
+    font-size: 27px;
+    color:gray;
+}
+
+.my-custom-label > input[type=radio]:checked + span i.icon-whatsapp{
+	color:#47c62e;
+}
+.my-custom-label > input[type=radio]:checked + span i.icon-mail{
+	color:#d64704;
+}
+.my-custom-label > input[type=radio]:checked + span i.icon-telegram{
+	color:#6199fb;
+}
+p.change_set{
+	display: none;
+}
+.my-custom-label > input[type=radio]:checked + p.change_set{
+	display: block;
+}
+.attach{
+	font-size: 27px;
+	color:black;
+}
+
+	</style>
 </head>
 <body>
 	<div id="block_head">
@@ -21,19 +76,42 @@
 		</div>
 		<div class="head_text">
 		<span class='title'>Мы первые в Казахстане</span><br><br>
-		<span class="text">решили создать онлайн сервис для помощи в решении задач по программированию</span>
+		<span class="text">создали онлайн сервис для помощи в решении задач по программированию</span>
+
 		</div>
 		<div class="form_zayavka">
 			<h3>Ваша задача - Наше решение</h3>
 			<form>
+					<label class="my-custom-label">
+					    <input name="test" type="radio" value='1' checked />
+					    <span><i class='base_socset icon-whatsapp'></i></span>
+					    <p class="change_set"><input type="text" name="" placeholder="Ватсап"></p>
+					</label> 
+					<label class="my-custom-label">
+					    <input name="test" type="radio" value='2' />
+					    <span><i class='base_socset icon-mail'></i></span>
+					    <p class="change_set"><input type="text" name="" placeholder="Почта"></p>
+					</label>
+					<label class="my-custom-label">
+					    <input name="test" type="radio" value='3' />
+					    <span><i class='base_socset icon-telegram'></i></span>
+					    <p class="change_set"><input type="text" name="" placeholder="Телеграмм"></p>
+					</label>
+				
 				<p><input type="text" name="" placeholder="Ник"></p>
-				<p><textarea placeholder="Описание"></textarea></p>
+				<p><textarea placeholder="Описание"></textarea>
+					<label class="my-custom-label" style="
+    position: absolute;
+    right: 35px;
+">
+					    <input name="file" type="file" style="display: none;">
+					    <span><i class="attach icon-attach"></i></span>
+					</label>
+				</p>
 				
 				<p><input type="date" name=""></p>
-				<p><input type="file" name="" style="
-    height: 100%;
-    width: auto;
-"></p>
+				
+				
 				<button class='but' type="submit"><span>Отправить</span>  </button>
 			</form>
 		</div>
@@ -144,7 +222,24 @@
 					Веб разработка
 				</div>
 			</div>
-
+			<div class="usluga">
+				<img src="img/help.png" height='100px'>
+				<div class="usluga_text">
+					Бесплатная консультация при выборе направления
+				</div>
+			</div>
+			<div class="usluga">
+				<img src="img/robot.png" height='100px'>
+				<div class="usluga_text">
+					Парсинг веб-страниц
+				</div>
+			</div>
+			<div class="usluga">
+				<img src="img/web.png" height='100px'>
+				<div class="usluga_text">
+					Объяснение задач
+				</div>
+			</div>
 		</div>
 		</div>
 	</div>
@@ -258,7 +353,7 @@
 	</div>
 	<div class="footer">
 		<div class="ftr_block">
-			<p class='icon_title'>Соц.сети</p>
+			<p class='icon_title'>Связаться с нами</p>
 			<ul class='icons'>
 				<li><i class='socset icon-vkontakte'></i></li>
 				<li><i class='socset icon-instagram'></i></li>
