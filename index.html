@@ -100,29 +100,29 @@ p.change_set{
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='1' checked />
 					    <span><i class='base_socset icon-whatsapp'></i></span>
-					    <p class="change_set"><input class="input_nik wts" type="text" name="" placeholder="Ватсап"></p>
+					    <p class="change_set"><input class="input_nik wts" type="text" name="whatsapp" placeholder="Ватсап"></p>
 					</label> 
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='2' />
 					    <span><i class='base_socset icon-mail'></i></span>
-					    <p class="change_set"><input class="input_nik pos" type="text" name="" placeholder="Почта"></p>
+					    <p class="change_set"><input class="input_nik pos" type="email" name="posta" placeholder="Почта"></p>
 					</label>
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='3' />
 					    <span><i class='base_socset icon-telegram'></i></span>
-					    <p class="change_set"><input class="input_nik tlgrm" type="text" name="" placeholder="Телеграмм"></p>
+					    <p class="change_set"><input class="input_nik tlgrm" type="text" name="telegram" placeholder="Телеграмм"></p>
 					</label>
-				<p><textarea placeholder="Описание"></textarea>
+				<p><textarea required placeholder="Описание"></textarea>
 					<label class="my-custom-label" style="
     position: absolute;
     right: 35px;
 ">
-					    <input name="file" type="file" style="display: none;">
-					    <span><i class="attach icon-attach"></i></span>
+					    <input id="attach" name="file" type="file" style="display: none;">
+					    <span><i class="attach icon-attach" title="Нет выбранных файлов"></i></span>
 					</label>
 				</p>
 				
-				<p><input type="date" name=""></p>
+				<p><input required type="date" name=""></p>
 				
 				
 				<button class='but' type="submit"><span>Отправить</span>  </button>
@@ -407,5 +407,16 @@ p.change_set{
 ">Сот.: 8 747 928 34 92</p>
 		</div>
 	</div>
+	<script type="text/javascript">
+		document.getElementById('attach').addEventListener('change', function(){
+  if( this.value ){
+    document.getElementsByClassName('attach')[0].style.color = "#156aff";
+    document.getElementsByClassName('attach')[0].title = this.value;
+  } else{
+  	document.getElementsByClassName('attach')[0].style.color = "black";
+  	document.getElementsByClassName('attach')[0].title = 'Файл не выбран';
+  }
+});
+	</script>
 </body>
 </html>
