@@ -11,7 +11,7 @@
 .my-custom-label {
     display:inline-block;
     width: 40px;
-    height: 40px;
+    height: 90px;
     line-height: 40px;
    /*background: #efefef;*/
     text-align: center;
@@ -52,12 +52,26 @@
 p.change_set{
 	display: none;
 }
-.my-custom-label > input[type=radio]:checked + p.change_set{
+.my-custom-label > input[type=radio]:checked ~ p{
 	display: block;
+}
+.my-custom-label > input[type=radio]:checked ~ p input.wts{
+	border-color:#47c62e ;
+}
+.my-custom-label > input[type=radio]:checked ~ p input.pos{
+	border-color: #d64704;
+}
+.my-custom-label > input[type=radio]:checked ~ p input.tlgrm{
+	border-color: #6199fb;
 }
 .attach{
 	font-size: 27px;
 	color:black;
+}
+.input_nik{
+	    position: absolute;
+    left: 7%;
+    width: 86% !important;
 }
 
 	</style>
@@ -85,20 +99,18 @@ p.change_set{
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='1' checked />
 					    <span><i class='base_socset icon-whatsapp'></i></span>
-					    <p class="change_set"><input type="text" name="" placeholder="Ватсап"></p>
+					    <p class="change_set"><input class="input_nik wts" type="text" name="" placeholder="Ватсап"></p>
 					</label> 
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='2' />
 					    <span><i class='base_socset icon-mail'></i></span>
-					    <p class="change_set"><input type="text" name="" placeholder="Почта"></p>
+					    <p class="change_set"><input class="input_nik pos" type="text" name="" placeholder="Почта"></p>
 					</label>
 					<label class="my-custom-label">
 					    <input name="test" type="radio" value='3' />
 					    <span><i class='base_socset icon-telegram'></i></span>
-					    <p class="change_set"><input type="text" name="" placeholder="Телеграмм"></p>
+					    <p class="change_set"><input class="input_nik tlgrm" type="text" name="" placeholder="Телеграмм"></p>
 					</label>
-				
-				<p><input type="text" name="" placeholder="Ник"></p>
 				<p><textarea placeholder="Описание"></textarea>
 					<label class="my-custom-label" style="
     position: absolute;
