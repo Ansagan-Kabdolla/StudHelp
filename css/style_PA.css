@@ -92,7 +92,8 @@ border: 1px solid #A3A3A3;
 box-sizing: border-box;
 }
 .form_zayavka textarea{
-	height:100px;
+	min-height:100px;
+    min-width: 90%;
 	max-width: 90%;
 }
 .change_contact{
