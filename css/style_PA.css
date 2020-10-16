@@ -93,7 +93,7 @@ ul{
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 600px;
     position:relative;
     z-index: 1;
     float: right;
@@ -750,6 +750,9 @@ border-radius:0px 60px;
 }
 
 @media screen and (max-width: 540px){
+    .language{
+    right:20px;
+}
     .about_text{
         width:360px;
     }
